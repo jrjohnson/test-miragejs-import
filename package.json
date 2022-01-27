@@ -26,6 +26,7 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
+    "@embroider/macros": "^1.0.0",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-htmlbars": "^6.0.1"
   },
@@ -60,6 +61,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-qunit": "^7.2.0",
     "loader.js": "^4.7.0",
+    "miragejs": "^0.1.43",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
     "qunit": "^2.17.2",
@@ -74,5 +76,13 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "peerDependencies": {
+    "miragejs": "*"
+  },
+  "peerDependenciesMeta": {
+    "miragejs": {
+      "optional": true
+    }
   }
 }
